@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Universo</title>
+  <link rel="stylesheet" href="_css/estilos.css" />
+  <link rel="icon" type="image/x-icon" href="ruta/al/favicon.ico">
+</head>
+<body>
+  <header>
+    <h1>Explora el Universo</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="_html/galaxia.html">Galaxias</a></li>
+        <li><a href="_html/planetas.html">Planetas</a></li>
+        <li><a href="_html/agujeros_negros.html">Agujeros Negros</a></li>
+        <li><a href="_html/contacto.html">Contacto </a></li>
+      </ul>
+    </nav>
+  </header>
+</head>
+<body class="bg-gradient-to-br from-indigo-500 to-purple-600 min-h-screen flex items-center justify-center p-6">
+  <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-xl w-full">
+    <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Contáctanos</h2>
+    
+    <form id="contact-form" class="space-y-5">
+      <div>
+        <label class="block text-gray-700 font-medium">Nombre</label>
+        <input type="text" required class="w-full mt-1 px-4 py-2 border rounded-xl focus:ring-2 focus:ring-indigo-400" />
+      </div>
+      <div>
+        <label class="block text-gray-700 font-medium">Correo Electrónico</label>
+        <input type="email" required class="w-full mt-1 px-4 py-2 border rounded-xl focus:ring-2 focus:ring-indigo-400" />
+      </div>
+      <div>
+        <label class="block text-gray-700 font-medium">Mensaje</label>
+        <textarea rows="4" required class="w-full mt-1 px-4 py-2 border rounded-xl focus:ring-2 focus:ring-indigo-400"></textarea>
+      </div>
+      <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 rounded-xl transition-all">
+        Enviar Mensaje
+      </button>
+    </form>
+
+    <div id="mensaje-exito" class="hidden mt-4 text-green-600 font-semibold text-center">
+      ¡Gracias! Tu mensaje ha sido enviado.
+    </div>
+  </div>
+</body>
+</html>
